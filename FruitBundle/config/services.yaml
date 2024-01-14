@@ -1,0 +1,5 @@
+# ./api/FruitBundle/config/services.yaml
+services:
+  BasketFruit\FruitBundle\EventListener\AddFruitResponseListener:
+    tags:
+      - { name: kernel.event_listener, event: kernel.response }
